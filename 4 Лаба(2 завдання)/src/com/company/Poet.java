@@ -1,6 +1,8 @@
 package com.company;
 
-public class Poet {
+import java.util.Date;
+
+public abstract class Poet {
     protected String Surname;
     protected String Language;
     protected int AmountOfCollection;
@@ -14,9 +16,10 @@ public class Poet {
     public Poet() {
     }
 
-    public int getLengthOfSurname(){
-        return Surname.length();
-    }
+    public abstract int getLengthOfSurname();
+    public abstract int getAmountOfListener();
+    public abstract Date getDate();
+    public abstract String toSave();
 
 
 

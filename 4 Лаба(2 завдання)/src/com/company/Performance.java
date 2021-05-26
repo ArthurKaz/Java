@@ -13,7 +13,6 @@ public class Performance extends Poet{
         this.place = place;
         AmountOfListener = amountOfListener;
     }
-
     public Performance(String str) {
         String[] data =str.split(" ");
         Surname = data[0];
@@ -31,10 +30,17 @@ public class Performance extends Poet{
         AmountOfListener = Integer.parseInt(data[7]);
     }
 
+    @Override
+    public int getLengthOfSurname(){
+        return Surname.length();
+    }
+
+    @Override
     public int getAmountOfListener(){
         return AmountOfListener;
     }
 
+    @Override
     public Date getDate(){
         return date;
     }
@@ -46,6 +52,7 @@ public class Performance extends Poet{
         return "\nДата - "+date+"\n Місце - "+place+"\nКлькість слухачів - "+AmountOfListener+"\nПрізвище - "+Surname+ "\nМова - "+ Language + "\nКількість збірок - "+AmountOfCollection;
     }
 
+    @Override
     public String toSave() {
         return Surname + " " + Language + " "+AmountOfCollection+" "+ date.getYear() +" " + date.getMonth() + " "+ date.getDate() +" " + place+" "+ AmountOfListener + "\n";
     }
