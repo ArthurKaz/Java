@@ -1,8 +1,4 @@
 package com.company;
-
-import com.sun.org.apache.xpath.internal.objects.XString;
-
-import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -20,7 +16,6 @@ public class Main {
 
         int i = 0;
         for (char letter : str.toCharArray()) {
-            //if(letter == ' ') amountOfConsonantLetters++;
             if (letter == ' '){ i++;
                 words[i] = new String();
             }
@@ -78,40 +73,5 @@ public class Main {
             }
 
         }while (select != 3 );
-
-
-
-
-/*  int amountOfConsonantLetters = 0;
-        int amountOfVowels = 0;
-
-        int spaces = 0;
-
-
-        for (char letter : str.toCharArray()){
-            if(letter == ' ') spaces++;
-        }
-        System.out.println(spaces);
-
-        String[] words  = new String[spaces + 1];
-        words[0] = new String();
-
-            int m = 0;
-            for (char letter : str.toCharArray()) {
-                //if(letter == ' ') amountOfConsonantLetters++;
-                if (letter == ' '){ m++;
-                words[m] = new String();
-                }
-                else words[m] += letter;
-            }
-        for (String word : words) {
-            System.out.println(word);
-            for (char letter: word.toCharArray()){
-                if(letter == 'а'||letter == 'о' ||letter == 'у' || letter == 'е' ||letter == 'и' ||letter == 'і')  amountOfVowels++;
-                else amountOfConsonantLetters++;
-            }
-            System.out.println("Кількість голосних - " + amountOfVowels);
-            System.out.println("Кількість приголосних - " + amountOfConsonantLetters);
-        }*/
     }
 }

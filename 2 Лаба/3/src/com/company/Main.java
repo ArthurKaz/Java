@@ -1,13 +1,8 @@
 package com.company;
-
-import javafx.beans.binding.ListBinding;
-
 import java.io.*;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.concurrent.TimeoutException;
-
 public class Main {
     private static Scanner obj = new Scanner(System.in);
     public static void main(String[] args) {
@@ -68,7 +63,7 @@ public class Main {
         System.out.println("Всього слів видалено - "+amount);
 
         try (BufferedWriter bw=new BufferedWriter(new FileWriter("output.txt"))){
-            for(String word:temp) bw.write(word + " ");//str += word + " ";
+            for(String word:temp) bw.write(word + " ");
         }catch(IOException ex) {
             new Exception(ex.getMessage());
         }

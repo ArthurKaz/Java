@@ -11,13 +11,9 @@ public class Poet {
         AmountOfCollection = amountOfCollection;
     }
 
-    public Poet() {
-    }
+    public  Poet() {}
 
     public int getLengthOfSurname(){
         return Surname.length();
     }
-
-
-
 }

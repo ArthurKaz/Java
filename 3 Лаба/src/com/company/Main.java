@@ -1,15 +1,7 @@
 package com.company;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import java.util.function.UnaryOperator;
-
-
-/*Описати  клас  для  бази  зданих  з  інформацією про  успішність  групи  студентів  з  полями: прізвище та ім’я,
-No залікової книжки, оцінки за 100 бальною шкалою з п’яти предметів. Впорядкувати записиу порядку зростання зростання
- середнього балу і вивести їх на екран у формі таблиці. Визначити відсоток студентів, що мають незадовільні оцінки.*/
-
 public class Main {
     private static Scanner obj = new Scanner(System.in);
     public static void main(String[] args) {
@@ -85,8 +77,6 @@ public class Main {
                     }
 
                     float percent = (float) amount/ (float)students.size()*100.f;
-                    System.out.println(amount);
-                    System.out.println(students.size());
                     System.out.println("Відсоток студентів, що мають незадовільні оцінку - " + (int)percent+"%" );///students.size() * 100 );
                     break;
             }

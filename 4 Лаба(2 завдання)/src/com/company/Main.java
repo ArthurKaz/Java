@@ -37,31 +37,10 @@ public class Main {
             switch (select) {
                 case 1:
                     try {
-                        System.out.println("Введіть прізвище автора");
-                        String surname = obj.next();
-                        System.out.println("Введіть мову ");
-                        String language = obj.next();
-                        System.out.println("Введіть кількість збірок");
-                        int amountOfCollection = obj.nextInt();
-                        System.out.println("Введіть дату");
-
-                        System.out.println("Введіть день");
-                        int date = obj.nextInt();
-                        if (date < 1 || date > 31) throw new IOException("Некоректно введено день");
-                        System.out.println("Введіть місяць");
-                        int month = obj.nextInt();
-                        if (month < 1 || month > 12) throw new IOException("Некоректно введено місяць");
-                        System.out.println("Введіть рік");
-                        int year = obj.nextInt();
-                        if (year < 1900 || year > 2030) throw new IOException("Некоректно введено рік");
-
-                        System.out.println("Введіть місце");
-                        String place = obj.next();
-                        System.out.println("Введіть кількість слухачів");
-                        int amountOfListener = obj.nextInt();
 
 
-                        performances.add(new Performance(surname, language, amountOfCollection, new Date(year, month, date), place, amountOfListener));
+
+                        performances.add(input());
                     } catch (IOException e) {
                         System.out.println(e.getMessage());
                         ;
@@ -87,30 +66,9 @@ public class Main {
                             throw new IOException("Порядковий номер не може бути відємний або нульовий");//System.out.println();
                         if (edit > performances.size())
                             throw new IOException("Введенего порядкового номера не знайдено");//System.out.println();
-                        System.out.println("Введіть прізвище автора");
-                        String surname = obj.next();
-                        System.out.println("Введіть мову ");
-                        String language = obj.next();
-                        System.out.println("Введіть кількість збірок");
-                        int amountOfCollection = obj.nextInt();
-                        System.out.println("Введіть дату");
 
-                        System.out.println("Введіть день");
-                        int date = obj.nextInt();
-                        if (date < 1 || date > 31) throw new IOException("Некоректно введено день");
-                        System.out.println("Введіть місяць");
-                        int month = obj.nextInt();
-                        if (month < 1 || month > 12) throw new IOException("Некоректно введено місяць");
-                        System.out.println("Введіть рік");
-                        int year = obj.nextInt();
-                        if (year < 1900 || year > 2030) throw new IOException("Некоректно введено рік");
 
-                        System.out.println("Введіть місце");
-                        String place = obj.next();
-                        System.out.println("Введіть кількість слухачів");
-                        int amountOfListener = obj.nextInt();
-
-                        performances.set(edit, new Performance(surname, language, amountOfCollection, new Date(year, month, date), place, amountOfListener));
+                        performances.set(edit - 1, input());
 
                     } catch (IOException e) {
                         System.out.println(e.getMessage());
@@ -174,6 +132,32 @@ public class Main {
         } while (select != 9 && select!=10);
     }
 
+    public static Poet input() throws IOException{
+        System.out.println("Введіть прізвище автора");
+        String surname = obj.next();
+        System.out.println("Введіть мову ");
+        String language = obj.next();
+        System.out.println("Введіть кількість збірок");
+        int amountOfCollection = obj.nextInt();
+        System.out.println("Введіть дату");
+
+        System.out.println("Введіть день");
+        int date = obj.nextInt();
+        if (date < 1 || date > 31) throw new IOException("Некоректно введено день");
+        System.out.println("Введіть місяць");
+        int month = obj.nextInt();
+        if (month < 1 || month > 12) throw new IOException("Некоректно введено місяць");
+        System.out.println("Введіть рік");
+        int year = obj.nextInt();
+        if (year < 1900 || year > 2030) throw new IOException("Некоректно введено рік");
+
+        System.out.println("Введіть місце");
+        String place = obj.next();
+        System.out.println("Введіть кількість слухачів");
+        int amountOfListener = obj.nextInt();
+
+        return new Performance(surname, language, amountOfCollection, new Date(year, month, date), place, amountOfListener);
+    }
 
     public static Date searchDate(List<Poet> performances) throws IOException{
 

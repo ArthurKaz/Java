@@ -1,7 +1,5 @@
 package com.company;
 
-import javafx.concurrent.Task;
-
 import java.io.*;
 
 public class Main {
@@ -49,7 +47,7 @@ public class Main {
             new Exception(ex.getMessage());
         }
 
-        System.out.println("Дані успішно записано");
+        System.out.println("Дані успішно перезаписано");
     }
 
     public static void main(String[] args) {
