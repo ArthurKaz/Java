@@ -107,8 +107,6 @@ public class Main {
                     break;
                 case 7:
                     try {
-
-
                         System.out.println("Дата з найбльшою кількістю слухачів - " + searchDate(performances));
                     } catch (Exception e) {
                         System.out.println(e.getMessage());

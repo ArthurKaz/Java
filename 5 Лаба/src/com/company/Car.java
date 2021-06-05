@@ -22,6 +22,15 @@ public class Car implements Vehicle{
         Data = data;
     }
 
+    public Car(String str) {
+        String[] data =str.split(" ");
+        Brand = data[0];
+        Color = data[1];
+        PhoneNumber = data[2];
+        Year = Integer.parseInt(data[3]);
+        Data = data[4];
+    }
+
 
     @Override
     public void output() {
@@ -29,7 +38,17 @@ public class Car implements Vehicle{
         System.out.println("Колір - "+Color);
         System.out.println("Номре телефону - "+PhoneNumber);
         System.out.println("Рік випуску - "+Year);
-        System.out.println("Дані про власника - "+Data);
+        System.out.println("Дані про власника - "+Data+"\n");
+    }
+
+    @Override
+    public char getBrand() {
+        return Brand.toCharArray()[0];
+    }
+
+    @Override
+    public String getColor() {
+        return Color;
     }
 
     @Override
@@ -75,5 +94,8 @@ public class Car implements Vehicle{
 
     }
 
-
+    @Override
+    public String getStringBrand() {
+        return Brand;
+    }
 }
