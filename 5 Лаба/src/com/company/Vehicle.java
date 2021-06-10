@@ -1,7 +1,6 @@
 package com.company;
 
 import java.io.IOException;
-import java.util.List;
 
 public interface Vehicle {
 
@@ -11,4 +10,6 @@ public interface Vehicle {
     String getStringBrand();
     char getBrand();
     String getColor();
+
+    String toSave();
 }

@@ -43,7 +43,7 @@ public class Main {
                         performances.add(input());
                     } catch (IOException e) {
                         System.out.println(e.getMessage());
-                        ;
+
 
                     }
 
