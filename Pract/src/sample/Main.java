@@ -2,18 +2,10 @@ package sample;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.scene.Group;
 import javafx.scene.control.*;
-import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.FlowPane;
-import javafx.collections.ObservableList;
-import javafx.collections.FXCollections;
-import javafx.geometry.Orientation;
-
-import java.io.IOException;
-
 public class Main extends Application {
 
     @Override

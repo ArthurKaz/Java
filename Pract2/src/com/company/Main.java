@@ -1,13 +1,8 @@
 package com.company;
 
-import org.omg.CosNaming.NamingContextPackage.NotFound;
-
 public class Main {
 
     public static void main(String[] args) throws Exception {
-	// write your code here
-        /*int[] mass = {2,5,9,4};//{ 5,0,4,4};
-        int[] i = wrap(mass);*/
 
     }
 

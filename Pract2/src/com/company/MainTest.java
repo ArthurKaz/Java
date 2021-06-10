@@ -1,12 +1,6 @@
 package com.company;
 
 import org.junit.Assert;
-import org.omg.CosNaming.NamingContextPackage.NotFound;
-import sun.tracing.NullProviderFactory;
-
-import java.net.Inet4Address;
-
-import static org.junit.Assert.*;
 
 public class MainTest {
 
