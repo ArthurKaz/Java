@@ -188,7 +188,6 @@ public class Main extends Application {
                 }
 
             }});
-
         Button back = new Button("Назад");
         back.setOnAction(new EventHandler<ActionEvent>() {
             @Override

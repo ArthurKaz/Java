@@ -12,10 +12,10 @@ public class Main {
 
     public static void main(String[] args) {
         List<Doctor> doctors = new LinkedList<>();
-        doctors.add(new WorkingDay("asff","asdf",new Date(2004, 5, 5),65,new Time(5,5,5)));
-        doctors.add(new WorkingDay("asff","asdf",new Date(2007, 5, 5),1,new Time(15,5,5)));
-        doctors.add(new WorkingDay("asff","asdf",new Date(2004, 4, 5),2,new Time(7,5,5)));
-        doctors.add(new WorkingDay("asff","asdf",new Date(2020, 11, 5),65,new Time(9,5,5)));
+        doctors.add(new WorkingDay("ШЕВЧЕНКО_МИКОЛА_ІВАНОВИЧ","Гематолог",new Date(2004, 5, 5),65,new Time(5,5,5)));
+        doctors.add(new WorkingDay("МЕЛЬНИК_ВОЛОДИМИР_ІВАНОВИЧ","Подолог",new Date(2007, 5, 5),1,new Time(15,5,5)));
+        doctors.add(new WorkingDay("ТКАЧЕНКО_МИКОЛА_МИКОЛАЙОВИЧ","Хірург",new Date(2004, 4, 5),2,new Time(7,5,5)));
+        doctors.add(new WorkingDay("КОВАЛЬ_ВОЛОДИМИР_ІВАНОВИЧ","Сімейний_лікар",new Date(2020, 11, 5),65,new Time(9,5,5)));
         int select;
         do {
             System.out.println("1. Додати дані");

@@ -1,16 +1,9 @@
 package com.company;
-
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 import java.io.*;
 import java.util.*;
-import java.util.logging.Level;
 import java.util.stream.Collectors;
-
 public class Main {
-
     public static Scanner obj = new Scanner(System.in);
-
     public static void main(String[] args) {
 
         List<Vehicle> vehicles = new LinkedList<>();
@@ -23,7 +16,6 @@ public class Main {
         vehicles.add(new Car("bmw","red","123456789",2000,"sdfgd"));
         vehicles.add(new Car("opel","black","123456789",2000,"sdfgd"));
         vehicles.add(new Car("bmw","black","123456789",2000,"sdfgd"));
-
         int select;
         do {
             System.out.println("1. Додати дані");
